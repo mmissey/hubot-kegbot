@@ -18,7 +18,7 @@
 	module.exports = (robot)->
 
 		unless process.env.HUBOT_KEGBOT_URL?
-			cosnole.log 'The HUBOT_KEGBOT_TOKEN environment variable not set'
+			console.log 'The HUBOT_KEGBOT_TOKEN environment variable not set'
 			robot.logger.warning 'The HUBOT_KEGBOT_URL environment variable not set'
 			return
 
@@ -68,7 +68,6 @@
 					msg += "#{percentLeft}% Remaining\n"
 					msg += "#{link}\n"
 					message.send msg
-					message.send "\n\n\n"
 			catch error
 				console.log error
 		return 
