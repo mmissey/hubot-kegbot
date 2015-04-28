@@ -1,6 +1,6 @@
 {
   "name": "hubot-kegbot",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "author": "Marc Missey",
   "keywords": [
@@ -30,7 +30,7 @@
     "url": "https://github.com/mmissey/hubot-kegbot/issues"
   },
   "homepage": "https://github.com/mmissey/hubot-kegbot",
-  "main": "kegbot.coffee",
+  "main": "./index.coffee",
   "scripts": {
     "test": "hubot keg me"
   },
