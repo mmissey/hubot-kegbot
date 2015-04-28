@@ -36,14 +36,10 @@
 		TOKEN = process.env.HUBOT_KEGBOT_TOKEN
 
 		url = KEGBOT_URL + "/api/taps";
-		console.log "send stats"
-		console.log KEGBOT_URL
-		console.log TOKEN
 		message.http( url )
 		.headers("X-Kegbot-Api-Key": TOKEN)
 		.get() (error, response, body)->
 			body = JSON.parse body
-			console.log "response"
 			try
 				for tap, index in body.objects
 					keg = tap.current_keg
